@@ -3,7 +3,8 @@
 //
 function ipForNumber(ip){
 	var ipl = 0;
-	if(ip){
+	//console.log(ip);
+	if(!ip){
 		return null;
 	}
 	ip.split('.').forEach(function(octet){
@@ -24,3 +25,10 @@ function numberForIp(number){
     }
     return d;
 }
+
+var ips =["123.114.60.176","192.30.255.113","111.13.100.91","216.58.200.46"];
+console.log(ipForNumber("123.114.60.176"));
+for(var l = ips.length;l--;){
+	console.log(ipForNumber(ips[l]));
+}
+

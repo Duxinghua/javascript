@@ -1,23 +1,19 @@
-======================================
-bitpie Documentation
-======================================
+.. my project documentation master file, created by
+   sphinx-quickstart on Tue Apr 25 18:15:46 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-..  image:: img/logo.png
-   :height: 256px
-   :width: 256px
-   :scale: 100%
-   :alt: chaincloud-logo
-   :align: center
+比特派使用文档
+======================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+   :caption: 目录:
 
-   sellBuy/index
+   id/index
+   download/index
+   btc/index
 
-Indices and tables
-==================
 
-* :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
