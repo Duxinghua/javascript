@@ -10,10 +10,16 @@
    :maxdepth: 3
    :caption: 目录:
 
+   note/index
    id/index
-   download/index
+   password/index
    btc/index
+   send/index
+   otc/index
+   tx/index
+   address/index
+   collection/index
+   version/index
+   raq/index
 
 
-* :ref:`modindex`
-* :ref:`search`
