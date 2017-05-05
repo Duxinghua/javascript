@@ -12,6 +12,7 @@
 
    raq/index
    note/index
+   download/index
    soft/index
    password/index
    version/index
