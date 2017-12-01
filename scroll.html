@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.wrap{
+			width:200px;
+			height:200px;
+			border:1px solid red;
+			overflow: scroll;
+		}
+		.box{
+			width:300px;
+			height:200px;
+			background:green;
+		}
+
+		td{
+			width:150px;
+		}
+		#wap{
+			position: relative;
+		}
+		#test{
+			display: none;
+			width:100px;
+			height:10px;
+			border:1px solid yellow;
+			position:absolute;
+			
+			z-index: 99	
+		}
+		#wap:hover #test{
+			display:block;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box">
+			<table>
+				<tr>
+					<td>111</td>
+					<td>222</td>
+					<td>333</td>
+					<td>444</td>
+					<td>555</td>
+					<td>666</td>
+					<td>777</td>
+					<td>888</td>
+
+
+				</tr>
+				<tr>
+					<td>111</td>
+					<td>222</td>
+					<td>333</td>
+					<td id="wrap">
+
+						555
+						<div id="test">
+							
+						</div>
+					</td>
+					<td>555</td>
+					<td>666</td>
+					<td>777</td>
+					<td>888</td>
+					
+				</tr>
+			</table>			
+		</div>
+	</div>
+	<script type="text/javascript">
+		var div = document.getElementsByClassName("wrap")[0];
+		console.log(div);
+		div.addEventListener("scroll", function(e){
+			console.dir(this.scrollLeft);
+		});
+	</script>
+
+</body>
+</html>

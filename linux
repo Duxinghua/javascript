@@ -1,0 +1,34 @@
+scp -P 2002 bitpie@192.168.1.248:/volume1/storage/lxc_dump/dump.tar.gz /mnt/hdd0/backups/
+
+tar -xzvf *.gz
+
+adduser bitpie sudo
+
+apt-get install sudo
+
+
+sudo passwd -l root
+
+
+apt-get update
+
+
+lvremove pve/data
+
+
+
+lvcreate --name vz -l +1%FREE pve
+lvcreate --name ssd0 -l +100%FREE pve
+
+mkfs.ext4 /dev/pve/vz
+mkfs.ext4 /dev/pve/ssd0
+
+
+vi /etc/mysql/*.cnf bind 0.0.0.0
+GRANT ALL PRIVILEGES ON *.* TO'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
+flush privileges;
+
+
+
+
+

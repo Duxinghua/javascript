@@ -1,3 +1,5 @@
+    var time = Date.UTC(2017,8,6,7,2);
+    console.log(time);
     //格式化utc时间
     function utcToTimestamp(time){
         var timeArray = time.split("T");
@@ -16,3 +18,8 @@
         }
         return y+"-"+m+"-"+d+"    "+h+":"+i+":"+s;
     }
+    var ms = ((18*3600+41)*1000)+(new Date().getTime());
+    var t = new Date().getTime()+ms;
+    console.log(new Date(ms))
+    var utc = Date.UTC(2017,8,6,7,2);
+    console.log(new Date(utc).toLocaleTimeString());

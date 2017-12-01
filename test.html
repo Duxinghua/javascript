@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>test</title>
+
+</head>
+<body>
+<ul>
+	<li>11111</li>
+	<li>111111</li>
+	<li>22222</li>
+
+</ul>
+
+<script type="text/javascript">
+	var lis = document.getElementsByTagName("li");
+	for(var i=0,l=lis.length;i<l;i++){
+		lis[i].onclick = (function(num){
+			return function(){
+				alert(num);
+			}
+
+		})(i);
+	}
+	function a(i){
+		return function(i){
+			return alert(i);
+		}
+	}
+</script>
+</body>
+</html>

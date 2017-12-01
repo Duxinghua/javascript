@@ -1,0 +1,1 @@
+在angularjs中如果通过ng-option做的选项，ng-model赋值需要赋值ng-option的选项.赋值的必须是一个对象
